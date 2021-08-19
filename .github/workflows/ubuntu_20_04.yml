@@ -36,7 +36,7 @@ jobs:
           rosdep update
           mkdir -p ~/catkin_ws/src
           cd ~/catkin_ws/src
-          sudo vcs import --recursive --input https://raw.githubusercontent.com/ETHZ-RobotX/SuperMegaBot/master/smb.repos .
+          vcs import --recursive --input https://raw.githubusercontent.com/ETHZ-RobotX/SuperMegaBot/master/smb.repos .
           rosdep install --from-paths . --ignore-src --os=ubuntu:focal -r -y
       - name: catkin build
         run: |
