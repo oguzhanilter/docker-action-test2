@@ -37,8 +37,6 @@ jobs:
           mkdir -p ~/catkin_ws/src
           cd ~/catkin_ws/src
           vcs import --recursive --input https://raw.githubusercontent.com/ETHZ-RobotX/SuperMegaBot/master/smb.repos .
-          cd ~/catkin_ws
-          rosdep install --from-paths src --ignore-src -r -s  # do a dry-run first
           rosdep install --from-paths . --ignore-src --os=ubuntu:focal -r -y
       - name: catkin build
         run: |
