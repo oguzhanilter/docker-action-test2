@@ -1,0 +1,6 @@
+# action.yml
+name: 'Docker Test'
+description: 'RSS Docker Code Test'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
