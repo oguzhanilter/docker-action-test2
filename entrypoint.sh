@@ -11,4 +11,9 @@ rosdep install --from-paths . --ignore-src --os=ubuntu:focal -r -y
 
 cd ..
 
-catkin build smb_opc
+echo "before build"
+
+# catkin build smb_opc
+catkin build smb_gazebo
+
+echo "after build"
